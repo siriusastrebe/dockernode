@@ -1,11 +1,11 @@
 # Creating and running the docker image
-docker build -t basicnode .
+`docker build -t basicnode .`
 
-docker run -p 3000:3000 basicnode
+`docker run -p 3000:3000 basicnode`
 
 # Installing Docker on an Ubuntu host:
 Instructions from: https://docs.docker.com/install/linux/docker-ce/ubuntu/
-
+```
 sudo apt-get update
 
 sudo apt-get install \
@@ -25,13 +25,16 @@ sudo add-apt-repository \
    stable"
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-
+```
 ### Testing Docker Installation
-sudo docker run hello-world
+`sudo docker run hello-world`
 
 # Other userful commands
-docker ps
-
-docker ps -a
-
-docker stop <CONTAINER ID>
+### List all docker containers
+`docker ps`
+### List docker containers including inactive
+`docker ps -a`
+### List docker images
+`docker images`
+### Stop a container
+`docker stop <CONTAINER ID>`
